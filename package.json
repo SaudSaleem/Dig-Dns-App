@@ -1,0 +1,20 @@
+{
+  "name": "dig-dns",
+  "version": "1.0.0",
+  "description": "Use dig command for DNS queries in node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaudSaleem/dig-dns.git"
+  },
+  "keywords": ["dig", "npm dig", "dig dns", "npm dig dns", "dig domain", "whois"],
+  "author": "saud-saleem <sauddsaleem@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SaudSaleem/dig-dns/issues"
+  },
+  "homepage": "https://github.com/SaudSaleem/dig-dns#readme"
+}
