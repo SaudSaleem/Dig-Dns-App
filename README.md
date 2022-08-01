@@ -3,7 +3,7 @@ This is a simple wrapper for the unix/linux/macos dig command. Output contain bo
 
 ## Install
 ```
-npm i dig-dns
+npm i dig-domain
 ```
 
 ## Usage
