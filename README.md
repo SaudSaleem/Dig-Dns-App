@@ -1,4 +1,4 @@
-# dig-dns [![npm version](https://badge.fury.io/js/dig-dns.svg)](https://badge.fury.io/js/dig-dns)
+# dig-domain [![npm version](https://badge.fury.io/js/dig-domain.svg)](https://badge.fury.io/js/dig-domain)
 This is a simple wrapper for the unix/linux/macos dig command. Output contain both raw JSON and corresponding API's
 
 ## Install
@@ -8,7 +8,7 @@ npm i dig-domain
 
 ## Usage
 ```
-dig([args], (options))
+dig([args])
 ```
 You can add [all args from dig](https://linux.die.net/man/1/dig) to the args array.
 ### Examples
