@@ -1,5 +1,5 @@
 # dig-domain [![npm version](https://badge.fury.io/js/dig-domain.svg)](https://badge.fury.io/js/dig-domain)
-This is a simple wrapper for the unix/linux/macos dig command. Output contain both raw JSON and corresponding API's
+This is a simple wrapper for the unix/linux/macos dig command. Output contain both raw JSON and corresponding IP's
 
 ## Install
 ```
