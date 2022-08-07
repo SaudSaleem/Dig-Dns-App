@@ -8,12 +8,14 @@ npm i dig-domain
 
 ## Usage
 ```
-dig([args])
+const dig = require('dig-domain')
+dig.dig([args])
 ```
 You can add [all args from dig](https://linux.die.net/man/1/dig) to the args array.
 ### Examples
 ```
-dig(['google.com', 'ANY'])
+const dig = require('dig-domain')
+dig.dig(['google.com', 'ANY'])
   .then((result) => {
     console.log(result)
   })
@@ -23,7 +25,7 @@ dig(['google.com', 'ANY'])
 ```
 Set custom DNS server:
 ```
-dig(['@8.8.8.4','google.com', 'ANY'])
+dig.dig(['@8.8.8.4','google.com', 'ANY'])
   .then((result) => {
     console.log(result)
   })
@@ -34,7 +36,7 @@ dig(['@8.8.8.4','google.com', 'ANY'])
 
 ## Result
 
-The dig result is object with following properties IPs, rawData, error
+The function returns object with following properties IPs, rawData, error
 ```
 {
     error: false,
