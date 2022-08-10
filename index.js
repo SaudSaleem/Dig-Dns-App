@@ -5,7 +5,7 @@ const dig = async (args) => {
     const data = await serverHelper.dig(args);
     return data;
   } catch (error) {
-    return error
+    return error;
   }
 };
 module.exports = dig;

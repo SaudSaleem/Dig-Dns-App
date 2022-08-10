@@ -1,31 +1,27 @@
 # dig-domain [![npm version](https://badge.fury.io/js/dig-domain.svg)](https://badge.fury.io/js/dig-domain)
+
 This is a simple wrapper for the unix/linux/macos dig command. Output contain both raw JSON and corresponding IP's
 
 ## Install
+
 ```
 npm i dig-domain
 ```
 
 ## Usage
+
 ```
 const dig = require('dig-domain')
-dig.dig([args])
+dig.lookup([args])
 ```
+
 You can add [all args from dig](https://linux.die.net/man/1/dig) to the args array.
+
 ### Examples
+
 ```
 const dig = require('dig-domain')
-dig.dig(['google.com', 'ANY'])
-  .then((result) => {
-    console.log(result)
-  })
-  .catch((err) => {
-    console.log('Error:', err);
-  });
-```
-Set custom DNS server:
-```
-dig.dig(['@8.8.8.4','google.com', 'ANY'])
+dig(['google.com'])
   .then((result) => {
     console.log(result)
   })
@@ -37,6 +33,7 @@ dig.dig(['@8.8.8.4','google.com', 'ANY'])
 ## Result
 
 The function returns object with following properties IPs, rawData, error
+
 ```
 {
     error: false,

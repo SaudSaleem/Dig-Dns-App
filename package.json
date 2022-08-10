@@ -1,6 +1,6 @@
 {
   "name": "dig-domain",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Use dig command for DNS queries in node",
   "main": "index.js",
   "scripts": {

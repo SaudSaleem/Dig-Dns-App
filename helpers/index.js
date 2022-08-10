@@ -4,23 +4,20 @@ const dig = (args) => {
   return new Promise((resolve, reject) => {
     const dig = spawn("dig", args);
     dig.stdout.on("data", async (data) => {
-
       const payload = extractServerInfo(data.toString());
-      payload.error == false 
-        ? resolve(payload)
-        : reject(payload);
+      payload.error == false ? resolve(payload) : reject(payload);
     });
   });
 };
 const extractServerInfo = (data) => {
-  
   const rawData = data;
   data = data.split(/\r?\n/);
   let index = data.findIndex((item) => item.includes("ANSWER SECTION"));
+  console.log("data", data);
   if (index < 0) {
     return {
       error: true,
-      message: 'Invalid arguments'
+      message: "Invalid arguments",
     };
   }
   let i = 1;
@@ -32,7 +29,7 @@ const extractServerInfo = (data) => {
   }
   const payload = {
     error: false,
-    IPs:ips,
+    IPs: ips,
     rawData,
   };
   return payload;
